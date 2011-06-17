@@ -1,60 +1,14 @@
 <!DOCTYPE html> 
 <html> 
 	<head> 
-	<title>Sum Up Tasks</title> 
-	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/ui/1.8.13/jquery-ui.min.js"></script>
-	<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
-	<style>
-#sum-bar h4 {
-	font-size:150%;
-}
-.ui-block-b {
-	font-size:300%;
-	text-align:center;
-}
-	</style>
-	<script>
-var sum = 0;
-
-function incrementSumBy(value) {
-	sum += value;
-	$('#sum').text(sum.toFixed(2));
-	$('#sum-bar').effect("highlight", { color : '#ffffff' }, 200);
-}
-function decrementSumBy(value) {
-	incrementSumBy(-value);
-}
-
-$(document).ready(function(){
-   incrementSumBy(0);
-
-   $("#quarter .plus").click(function(event){
-	incrementSumBy(.25);
-   });
-   $("#quarter .minus").click(function(event){
-	decrementSumBy(.25);
-   });
-   $("#half .plus").click(function(event){
-	incrementSumBy(.5);
-   });
-   $("#half .minus").click(function(event){
-	decrementSumBy(.5);
-   });
-   $("#full .plus").click(function(event){
-	incrementSumBy(1);
-   });
-   $("#full .minus").click(function(event){
-	decrementSumBy(1);
-   });
-   $("#reset-sum").click(function(event){
-	sum = 0;
-	incrementSumBy(0);
-   });
- });
-	</script>
-</head> 
+		<title>Sum Up Tasks</title> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.css" />
+		<script type="text/javascript" src="http://code.jquery.com/jquery-1.5.2.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/ui/1.8.13/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="http://code.jquery.com/mobile/1.0a4.1/jquery.mobile-1.0a4.1.min.js"></script>
+		<link rel="stylesheet" href="./sumuptasks.css" />
+		<script type="text/javascript" src="./sumuptasks.js"></script>
+	</head> 
 <body> 
 
 <div id="start" data-role="page" data-theme="b">
@@ -102,4 +56,3 @@ $(document).ready(function(){
 
 </body>
 </html>
-
